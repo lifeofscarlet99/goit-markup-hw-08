@@ -1,0 +1,103 @@
+.hero-box {
+  margin-top: 60px;
+  background-color: #2f303a;
+}
+
+.hero__container {
+  justify-content: center;
+  @media screen and (min-height: 480px) {
+    padding: 0;
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    justify-content: center;
+  }
+}
+
+.hero__button {
+  cursor: pointer;
+}
+.hero__button {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  color: var(--first-btn-color);
+  background-color: var(--second-btn-color);
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images6/tel-1x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  //max-width: 1600px;
+  margin: 0 auto;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images6/tel-2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images6/tab-1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images6/tab-2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images6/Img.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images6/desk-2x.jpg);
+    }
+  }
+}
+.hero {
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  text-align: center;
+}
+.hero__title {
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-height: 480px) {
+    width: 360px;
+    font-size: 26px;
+    font-weight: 1.6;
+    font-weight: 900;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
+}
+//@include tab {
+// width: 360px;
+//font-size: 26px;
+//font-weight: 1.6;
+//}
