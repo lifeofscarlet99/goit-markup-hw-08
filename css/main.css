@@ -95,6 +95,10 @@ ol {
   color: #2196f3;
 }
 
+.mob-list__link.current {
+  color: #2196f3;
+}
+
 .header {
   background: var(--header-color);
   width: 100%;
@@ -753,6 +757,12 @@ ol {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .about {
+    display: none;
+  }
+}
+
 .about {
   padding-top: 0;
 }
@@ -932,6 +942,18 @@ img {
 @media screen and (min-width: 768px) {
   .team-list__item {
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .team-list__item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team-list__item {
+    width: 100%;
   }
 }
 

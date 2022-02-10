@@ -24,7 +24,9 @@
 .site-list__link.current {
   color: #2196f3;
 }
-
+.mob-list__link.current {
+  color: #2196f3;
+}
 .header {
   @media screen and (max-height: 480px) {
     position: fixed;
