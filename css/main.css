@@ -95,10 +95,6 @@ ol {
   color: #2196f3;
 }
 
-.mob-list__link.current {
-  color: #2196f3;
-}
-
 .header {
   background: var(--header-color);
   width: 100%;
@@ -106,16 +102,8 @@ ol {
 
 @media screen and (max-height: 480px) {
   .header {
-    position: fixed;
     top: 0;
     z-index: 1;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    padding-top: 24px;
-    margin-bottom: 25px;
   }
 }
 
@@ -612,7 +600,6 @@ ol {
 
 @media screen and (min-height: 480px) {
   .hero__title {
-    width: 360px;
     font-size: 26px;
     font-weight: 1.6;
     font-weight: 900;
@@ -711,11 +698,18 @@ ol {
   text-transform: uppercase;
   color: #212121;
   align-items: center;
+  text-align: left;
 }
 
 @media screen and (min-width: 1200px) {
   .features-list__item h3 {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .features-list__item h3 {
+    text-align: center;
   }
 }
 
@@ -751,13 +745,7 @@ ol {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .about {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .about {
     display: none;
   }
@@ -765,6 +753,12 @@ ol {
 
 .about {
   padding-top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-bottom: 94px;
+  }
 }
 
 .about-title {
@@ -834,7 +828,6 @@ ol {
 @media screen and (min-width: 1200px) {
   .team {
     padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
@@ -942,12 +935,6 @@ img {
 @media screen and (min-width: 768px) {
   .team-list__item {
     margin: 15px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .team-list__item {
-    width: 100%;
   }
 }
 
@@ -1316,13 +1303,18 @@ img {
 
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
   padding-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
   .footer {
     padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding-top: 60px;
   }
 }
 
@@ -1636,7 +1628,6 @@ img {
 }
 
 .section {
-  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -1663,6 +1654,7 @@ img {
   border-radius: 4px;
   margin-top: 15px;
   margin-right: 8px;
+  margin-bottom: 36px;
   border: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1688,8 +1680,13 @@ img {
 .btn-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
   margin-top: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-list {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1715,6 +1712,10 @@ img {
 @media screen and (min-width: 768px) {
   .cards-set {
     margin-top: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -1733,8 +1734,15 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .cards__list {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__card {
     width: calc(100% / 3 - 30px);
     margin-left: 30px;
   }

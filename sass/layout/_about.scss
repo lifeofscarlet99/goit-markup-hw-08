@@ -1,15 +1,14 @@
 .about {
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
 
 .about {
   padding-top: 0;
-  //padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 .about-title {
   font-weight: bold;

@@ -24,20 +24,18 @@
 .site-list__link.current {
   color: #2196f3;
 }
-.mob-list__link.current {
-  color: #2196f3;
-}
+
 .header {
   @media screen and (max-height: 480px) {
-    position: fixed;
+    //position: fixed;
     top: 0;
     z-index: 1;
   }
   background: var(--header-color);
   width: 100%;
   @media screen and (min-width: 1200px) {
-    padding-top: 24px;
-    margin-bottom: 25px;
+    //padding-top: 24px;
+    //margin-bottom: 25px;
   }
 }
 .hr {
