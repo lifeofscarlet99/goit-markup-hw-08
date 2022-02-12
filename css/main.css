@@ -572,7 +572,7 @@ ol {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images6/desk-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images6/Img.png);
   }
 }
 
@@ -613,6 +613,12 @@ ol {
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    line-height: 42px;
   }
 }
 
@@ -698,18 +704,18 @@ ol {
   text-transform: uppercase;
   color: #212121;
   align-items: center;
-  text-align: left;
+  text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .features-list__item h3 {
     text-align: left;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .features-list__item h3 {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -851,10 +857,6 @@ img {
   overflow: hidden;
 }
 
-.team-list__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 480px) {
   .team-list__item:not(:last-child) {
     margin-bottom: 30px;
@@ -941,6 +943,7 @@ img {
 @media screen and (max-width: 480px) {
   .team-list__item {
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -1001,6 +1004,12 @@ img {
   flex-wrap: wrap;
   margin: -15px;
   padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__list {
+    margin-top: 30px;
+  }
 }
 
 .clients__item {
@@ -1303,7 +1312,6 @@ img {
 
 .footer {
   background-color: #2f303a;
-  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1315,6 +1323,13 @@ img {
 @media screen and (max-width: 480px) {
   .footer {
     padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 60px;
   }
 }
 
@@ -1618,17 +1633,13 @@ img {
 }
 
 .about-buttons {
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .about-buttons {
     margin-top: 94px;
   }
-}
-
-.section {
-  padding-bottom: 60px;
 }
 
 .btn-list__item:not(:last-child) {
@@ -1702,6 +1713,7 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
 .cards-set {
@@ -1724,9 +1736,8 @@ img {
     list-style: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
     margin-left: -30px;
-    margin-bottom: 30px;
+    padding-bottom: 94px;
   }
 }
 
