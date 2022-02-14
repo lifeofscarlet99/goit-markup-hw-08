@@ -611,7 +611,7 @@ ol {
     max-width: 696px;
     font-size: 44px;
     font-weight: 900;
-    line-height: 1.36;
+    line-height: 60px;
     letter-spacing: 0.06em;
   }
 }
@@ -868,9 +868,14 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 30px;
   font-size: 28px;
   line-height: 33px;
+}
+
+@media screen and (min-width: 480px) {
+  .team-pre-title {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -976,7 +981,12 @@ img {
   color: #212121;
   font-size: 28px;
   line-height: 1.18px;
-  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients__title {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1006,7 +1016,7 @@ img {
   padding: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .clients__list {
     margin-top: 30px;
   }
@@ -1327,6 +1337,13 @@ img {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer {
     padding-bottom: 60px;
@@ -1632,13 +1649,15 @@ img {
   margin-left: 10px;
 }
 
-.about-buttons {
-  padding-top: 60px;
+@media screen and (min-width: 480px) {
+  .about-buttons {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .about-buttons {
-    margin-top: 94px;
+    padding-top: 60px;
   }
 }
 
@@ -1726,8 +1745,6 @@ img {
     margin-top: -15px;
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
   }
 }
 
@@ -1737,7 +1754,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    padding-bottom: 94px;
+    padding-bottom: 64px;
   }
 }
 
