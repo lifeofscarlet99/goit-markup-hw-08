@@ -55,13 +55,11 @@ img {
   color: #212121;
   font-size: 28px;
   line-height: 33px;
-  @include tel {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
   @include desk {
     font-size: 36px;
     line-height: 1.16;
-    margin-bottom: 50px;
+    //margin-bottom: 50px;
   }
 }
 .team-content {
@@ -127,6 +125,7 @@ img {
   }
 }
 .team-content__title {
+  margin-bottom: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
